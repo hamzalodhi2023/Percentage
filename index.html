@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    function Percentage(Urdu, English, Math) {
+      if (
+        ((Urdu + English + Math) / 225) * 100 >= 90 &&
+        ((Urdu + English + Math) / 225) * 100 <= 100
+      ) {
+        alert(
+          "Your Percentage is " +
+            ((Urdu + English + Math) / 225) * 100 +
+            " and you are First, Congratulations!!👍👍"
+        );
+      } else if (
+        ((Urdu + English + Math) / 225) * 100 >= 75 &&
+        ((Urdu + English + Math) / 225) * 100 < 90
+      ) {
+        alert(
+          "Your Percentage is " +
+            ((Urdu + English + Math) / 225) * 100 +
+            " and you are Second, Excellent!!👏👏"
+        );
+      } else if (
+        ((Urdu + English + Math) / 225) * 100 >= 60 &&
+        ((Urdu + English + Math) / 225) * 100 < 75
+      ) {
+        alert(
+          "Your Percentage is " +
+            ((Urdu + English + Math) / 225) * 100 +
+            " and you are Third, Good Job!!😊"
+        );
+      } else if (
+        ((Urdu + English + Math) / 225) * 100 >= 45 &&
+        ((Urdu + English + Math) / 225) * 100 < 60
+      ) {
+        alert(
+          "Your Percentage is " +
+            ((Urdu + English + Math) / 225) * 100 +
+            " and you are Passed, Keep Learning!"
+        );
+      } else if (
+        ((Urdu + English + Math) / 225) * 100 < 45 &&
+        ((Urdu + English + Math) / 225) * 100 >= 1
+      ) {
+        alert(
+          "Your Percentage is " +
+            ((Urdu + English + Math) / 225) * 100 +
+            " and you are Failed, You need Yakka!"
+        );
+      } else {
+        alert("Invalid Input");
+      }
+    }
+
+    Percentage(
+      +prompt("Type your Urdu test number!"),
+      +prompt("Type your English test number!"),
+      +prompt("Type your Math test number!")
+    );
+  </script>
+</html>
